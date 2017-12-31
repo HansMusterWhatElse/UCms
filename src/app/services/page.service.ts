@@ -13,4 +13,8 @@ export class PageService {
     return this.http.get('http://localhost:60438/api/pages');
   }
 
+  getPage(slug) {
+    return this.http.get('http://localhost:60438/api/pages/' + slug);
+  }
+
 }
