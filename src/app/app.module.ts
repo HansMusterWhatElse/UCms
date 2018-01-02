@@ -7,9 +7,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PageService } from './services/page.service';
 import { HttpClientModule } from '@angular/common/http';
 import { PagesComponent } from './components/pages/pages.component';
+import { AdminPagesComponent } from './components/admin-pages/admin-pages.component';
 
 const appRoutes: Routes = [
- {path: ':page', component: PagesComponent},
+  {path: 'admin/pages', component: AdminPagesComponent},
+  {path: ':page', component: PagesComponent},
  {path: '', component: PagesComponent} // default homepage
 ]
 
@@ -17,7 +19,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     NavbarComponent,
-    PagesComponent
+    PagesComponent,
+    AdminPagesComponent
   ],
   imports: [
     BrowserModule,
