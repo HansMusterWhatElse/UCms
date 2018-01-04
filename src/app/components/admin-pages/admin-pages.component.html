@@ -2,7 +2,7 @@
   <p>Success</p>
 </div>
  <h1 class="page-title">Pages</h1>
- <a href="">Add a page</a>
+ <a routerLink="/admin/add-page">Add a page</a>
  <br><br>
  <table class="table">
    <tr bgcolor="#f9f9f9">
@@ -15,10 +15,10 @@
           {{ page.title }}
         </td>
         <td>
-          <a href="">Edit</a>
+          <a routerLink="/admin/edit-page/{{ page.id }}">Edit</a>
         </td>
-        <td>
-          <a href="">Delete</a>
+        <td *ngIf="page.slug != 'home'">
+          <a (click)="deletePage(page.id)" routerLink="/admin/pages">Delete</a>
         </td>
     </tr>
  </table>

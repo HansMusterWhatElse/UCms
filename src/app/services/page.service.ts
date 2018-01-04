@@ -21,4 +21,7 @@ export class PageService {
     return this.http.post('http://localhost:60438/api/pages/create', value);
   }
 
+  getEditPage(id) {
+    return this.http.get('http://localhost:60438/api/pages/edit/'+ id );
+  }
 }
