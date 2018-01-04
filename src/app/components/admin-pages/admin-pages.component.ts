@@ -21,4 +21,6 @@ export class AdminPagesComponent implements OnInit {
     this.pages = this.pageService.pagesBS;
   }
 
+  
+
 }

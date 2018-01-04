@@ -17,4 +17,8 @@ export class PageService {
     return this.http.get('http://localhost:60438/api/pages/' + slug);
   }
 
+  postAddPage(value) {
+    return this.http.post('http://localhost:60438/api/pages/create', value);
+  }
+
 }
