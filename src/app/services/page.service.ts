@@ -24,4 +24,9 @@ export class PageService {
   getEditPage(id) {
     return this.http.get('http://localhost:60438/api/pages/edit/'+ id );
   }
+
+  putEditPage(value) {
+    return this.http.put('http://localhost:60438/api/pages/edit/' + value.id, value);
+  }
+
 }
