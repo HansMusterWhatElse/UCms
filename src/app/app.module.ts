@@ -14,6 +14,9 @@ import { AdminSidebarComponent } from './components/admin-sidebar/admin-sidebar.
 
 import { PageService } from './services/page.service';
 import { SidebarService } from './services/sidebar.service';
+import { LoginComponent } from './components/login/login.component';
+import { LogoutComponent } from './components/logout/logout.component';
+import { RegisterComponent } from './components/register/register.component';
 
 const appRoutes: Routes = [
   {path: 'admin/pages', component: AdminPagesComponent},
@@ -32,7 +35,10 @@ const appRoutes: Routes = [
     AdminPagesComponent,
     AdminAddPageComponent,
     AdminEditPageComponent,
-    AdminSidebarComponent
+    AdminSidebarComponent,
+    LoginComponent,
+    LogoutComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
