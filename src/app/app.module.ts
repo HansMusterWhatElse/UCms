@@ -19,12 +19,15 @@ import { LogoutComponent } from './components/logout/logout.component';
 import { RegisterComponent } from './components/register/register.component';
 
 const appRoutes: Routes = [
+  {path: 'login', component: LoginComponent},
+  {path: 'logout', component: LogoutComponent},
+  {path: 'register', component: RegisterComponent},
   {path: 'admin/pages', component: AdminPagesComponent},
   {path: 'admin/add-page', component: AdminAddPageComponent},
   {path: 'admin/edit-page/:id', component: AdminEditPageComponent},
   {path: 'admin/sidebar', component: AdminSidebarComponent},
   {path: ':page', component: PagesComponent},
- {path: '', component: PagesComponent} // default homepage
+  {path: '', component: PagesComponent} // default homepage
 ]
 
 @NgModule({
